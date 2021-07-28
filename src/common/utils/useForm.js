@@ -131,7 +131,7 @@ export const useForm = (validate) => {
         'user_8ujG0w82IEpJw7e5JQ9Uw'
       )
     }
-    window.location.replace('/')
+
     const url = ''
     if (Object.keys(values).length === 3) {
       axios
@@ -142,6 +142,7 @@ export const useForm = (validate) => {
           setShouldSubmit(true)
         })
     }
+    window.location.replace('/')
   }
 
   useEffect(() => {
