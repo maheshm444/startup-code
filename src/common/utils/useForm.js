@@ -131,7 +131,7 @@ export const useForm = (validate) => {
         'user_8ujG0w82IEpJw7e5JQ9Uw'
       )
     }
-    window.location.reload()
+    window.location.replace('/')
     const url = ''
     if (Object.keys(values).length === 3) {
       axios
