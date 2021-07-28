@@ -20,6 +20,7 @@ export interface SvgIconProps {
 export interface InputProps {
   name?: string;
   placeholder: string;
+  display_tile?: boolean;
   t: any;
   type?: string;
   value?: string;

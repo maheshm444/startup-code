@@ -1,9 +1,9 @@
-import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
-import { SvgIcon } from "../../common/SvgIcon";
-import Container from "../../common/Container";
+import { Row, Col } from 'antd'
+import { withTranslation } from 'react-i18next'
+import { SvgIcon } from '../../common/SvgIcon'
+import Container from '../../common/Container'
 
-import i18n from "i18next";
+import i18n from 'i18next'
 import {
   FooterSection,
   Title,
@@ -19,17 +19,17 @@ import {
   Label,
   LanguageSwitch,
   LanguageSwitchContainer,
-} from "./styles";
+} from './styles'
 
 interface SocialLinkProps {
-  href: string;
-  src: string;
+  href: string
+  src: string
 }
 
 const Footer = ({ t }: any) => {
   const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+    i18n.changeLanguage(language)
+  }
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -42,8 +42,8 @@ const Footer = ({ t }: any) => {
       >
         <SvgIcon src={src} width="25px" height="25px" />
       </a>
-    );
-  };
+    )
+  }
 
   return (
     <>
@@ -51,8 +51,8 @@ const Footer = ({ t }: any) => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{t("Contact")}</Language>
-              <Large to="/">{t("(+91-7772035555)")}</Large>
+              <Language>{t('Contact')}</Language>
+              <Large to="/">{t('+91-7772035555 | +91-8105384226')}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
@@ -61,22 +61,22 @@ const Footer = ({ t }: any) => {
               </a>
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Language>{t("Address")}</Language>
+              <Language>{t('Address')}</Language>
               <Para>69, Commercial complex</Para>
               <Para>Nehru Nagar East, Bhilai</Para>
               <Para>490020</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-            <Title>{t("Company")}</Title>
+              <Title>{t('Company')}</Title>
 
               <Large left="true" to="/">
-                {t("Blog")}
+                {t('Blog')}
               </Large>
               <Large left="true" to="/">
-                {t("Press")}
+                {t('Press')}
               </Large>
               <Large left="true" to="/">
-                {t("Careers & Culture")}
+                {t('Careers & Culture')}
               </Large>
             </Col>
           </Row>
@@ -87,14 +87,14 @@ const Footer = ({ t }: any) => {
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
+            style={{ paddingTop: '3rem' }}
           >
             <NavLink to="/">
               <LogoContainer>
                 <SvgIcon
                   src="logo.svg"
                   aria-label="homepage"
-                  width="250px"
+                  width="147px"
                   height="64px"
                 />
               </LogoContainer>
@@ -112,13 +112,12 @@ const Footer = ({ t }: any) => {
                 href="https://www.linkedin.com/in/shashank23/"
                 src="linkedin.svg"
               />
-
             </FooterContainer>
           </Row>
         </Container>
       </Extra>
     </>
-  );
-};
+  )
+}
 
-export default withTranslation()(Footer);
+export default withTranslation()(Footer)

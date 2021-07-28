@@ -65,13 +65,13 @@ export class FormUserDetails extends Component {
         />
         <br />
         <br /> */}
-        <Button
+        {/* <Button
           style={{ background: '#2E3B55', color: '#FFFFFF' }}
           label="Continue"
           onClick={this.continue}
         >
           Continue
-        </Button>
+        </Button> */}
         <ButtonContainer>
           <Button name="submit" onClick={this.continue}></Button>
         </ButtonContainer>

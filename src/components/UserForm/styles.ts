@@ -9,7 +9,7 @@ export const ContactContainer = styled("div")`
 `;
 
 export const FormGroup = styled("form")`
-  width: 100%;
+  width: 80%;
   max-width: 520px;
 
   @media only screen and (max-width: 1045px) {
@@ -32,5 +32,15 @@ export const ButtonContainer = styled("div")`
 
   @media only screen and (max-width: 414px) {
     padding-top: 0.75rem;
+  }
+`;
+
+export const Language = styled("h4")`
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #18216d;
+
+  @media screen and (max-width: 414px) {
+    padding: 1.5rem 0;
   }
 `;
