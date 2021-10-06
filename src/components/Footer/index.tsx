@@ -35,12 +35,12 @@ const Footer = ({ t }: any) => {
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width='25px' height='25px' />
       </a>
     )
   }
@@ -49,33 +49,33 @@ const Footer = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-between">
+          <Row justify='space-between'>
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t('Contact')}</Language>
-              <Large to="/">{t('+91-7772035555 | +91-8105384226')}</Large>
+              <Large to='/'>{t('+91-7772035555 | +91-8105384226')}</Large>
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="shashankjaiswa67gmail.com">
+              {/* <a href='shashankjaiswa67gmail.com'>
                 <Chat>{t(`Let's Chat`)}</Chat>
-              </a>
+              </a> */}
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Language>{t('Address')}</Language>
-              <Para>69, Commercial complex</Para>
-              <Para>Nehru Nagar East, Bhilai</Para>
-              <Para>490020</Para>
+              <Para>F1, Business incubator,</Para>
+              <Para>Shri shankaracharya technical campus (S1)</Para>
+              <Para>Bhilai, 491001</Para>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Title>{t('Company')}</Title>
 
-              <Large left="true" to="/">
+              <Large left='true' to='/'>
                 {t('Blog')}
               </Large>
-              <Large left="true" to="/">
+              <Large left='true' to='/'>
                 {t('Press')}
               </Large>
-              <Large left="true" to="/">
+              <Large left='true' to='/'>
                 {t('Careers & Culture')}
               </Large>
             </Col>
@@ -85,32 +85,32 @@ const Footer = ({ t }: any) => {
       <Extra>
         <Container border={true}>
           <Row
-            justify="space-between"
-            align="middle"
+            justify='space-between'
+            align='middle'
             style={{ paddingTop: '3rem' }}
           >
-            <NavLink to="/">
+            <NavLink to='/'>
               <LogoContainer>
                 <SvgIcon
-                  src="logo.svg"
-                  aria-label="homepage"
-                  width="147px"
-                  height="64px"
+                  src='logo.svg'
+                  aria-label='homepage'
+                  width='147px'
+                  height='64px'
                 />
               </LogoContainer>
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="facebook.svg"
+                href='https://www.facebook.com/Geekspro.io'
+                src='facebook.svg'
               />
+              {/* <SocialLink
+                href='https://twitter.com/home?lang=en'
+                src='twitter.svg'
+              /> */}
               <SocialLink
-                href="https://twitter.com/home?lang=en"
-                src="twitter.svg"
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/shashank23/"
-                src="linkedin.svg"
+                href='https://www.linkedin.com/company/geekspro'
+                src='linkedin.svg'
               />
             </FooterContainer>
           </Row>
